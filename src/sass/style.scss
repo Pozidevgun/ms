@@ -1,0 +1,38 @@
+@import 'base/font';
+@import 'base/color';
+@import 'base/mixin';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: $blue;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    background: url(../img/Background.png);
+}
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    &--main{
+        max-width: 1450px;
+    }
+}
+@import 'block/header-component';
+@import 'block/header';
+@import 'block/nav-burger';
+@import 'block/nav';
+@import 'block/social';
+@import 'block/discuss';
+@import 'block/lang';
+@import 'block/text';
+@import 'block/button';
+@import 'block/_slider';
+@import 'block/video';
+@import 'block/title';

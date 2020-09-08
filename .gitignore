@@ -1,0 +1,12 @@
+node_modeles/
+
+src/img/
+
+gulpfile.js
+
+package.json
+
+package-lock.json
+
+src/fonts
+node_modules

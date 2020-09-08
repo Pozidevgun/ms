@@ -1,0 +1,30 @@
+.button{
+    width: 200px;
+    color: #fff;
+    background-color: $blue;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 700;
+    &--white{
+        background-color: #fff;
+        color: $blue;
+    }
+}
+.slider__btn{
+    padding: 10px;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.prev{
+    border: 1px solid #fff;
+    
+}
+.next{
+    border: 1px solid $blue;
+}

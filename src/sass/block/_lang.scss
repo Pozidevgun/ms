@@ -1,0 +1,29 @@
+.lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__wrapper{
+        position: relative;
+    }
+    &__link{
+        text-decoration: none;
+        cursor: pointer;
+        color: #000000;
+        padding: 0px 5px;
+        text-transform: uppercase;
+        transition: .3s;
+        padding: 0px 5px;
+        &:hover{
+            color: $blue;
+        }
+        &:nth-child(1):before{
+            position: absolute;
+            content: "";
+            @include box (1px, 14px);
+            background-color: #000000;
+            top: 5px;
+            right: 52%;
+
+        }
+    }
+}

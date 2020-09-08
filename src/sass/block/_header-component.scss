@@ -1,0 +1,16 @@
+.header-component{
+    padding-top: 45px;
+    background: url(../../img/blueBg.png) no-repeat ;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__slider{
+        padding: 110px 0;
+    }
+    
+    
+}
+@include media-query(950){
+    
+}

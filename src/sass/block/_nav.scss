@@ -1,0 +1,28 @@
+.nav{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__item{
+        font-weight: 400;
+        position: relative;
+        width: 100px;
+        text-align: center;
+        &:hover:before{
+            position: absolute;
+            content: "";
+            top: -55px;
+            left: 0;
+            @include box(100%, 3px);
+            background: #ffffff;
+        }
+    }
+    &__link{
+        color: #ffffff; 
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+}
