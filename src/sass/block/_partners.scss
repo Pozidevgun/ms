@@ -1,0 +1,91 @@
+.partners {
+    background-color: #ffffff;
+    padding: 50px 0;
+    height: 200px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        flex-basis: 16%;
+        height: 100px;
+        background-color: #fff;
+        transition: all .5s;
+        &:nth-child(1){
+            background-image: url(../../img/adik.png);
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+        &:nth-child(2){
+            background-image: url(../../img/acer.png);
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+        &:nth-child(3){
+            background-image: url(../../img/citi.png);
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+        &:nth-child(4){
+            background-image: url(../../img/canon.png);
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+        &:nth-child(5){
+            background-image: url(../../img/china.png);
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+        &:nth-child(6){
+            background-image: url(../../img/coca.png);
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+        &:hover{
+            border:1px solid #fff;
+            box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+        }
+        &:hover:nth-child(1){
+            background-image: url(../../img/coca.png);
+            
+        }
+        &:hover:nth-child(2){
+            background-image: url(../../img/coca.png);
+        }
+        &:hover:nth-child(3){
+            background-image: url(../../img/coca.png);
+        }
+        &:hover:nth-child(4){
+            background-image: url(../../img/coca.png);
+        }
+        &:hover:nth-child(5){
+            background-image: url(../../img/coca.png);
+        }
+        &:hover:nth-child(6){
+            background-image: url(../../img/adik.png);
+        }
+    }
+}
+@include media-query(800){
+    .partners {
+        height: 300px;
+        &__wrapper {
+            
+            flex-wrap: wrap;
+        }
+        &__item{
+            flex-basis: 33%;
+        }
+    }
+}
+@include media-query(500){
+    .partners {
+        height: 400px;
+       
+        &__item{
+            flex-basis: 49%;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.accordion {
+    color: #ffffff;
+    list-style: none;
+		&__item {
+                  position: relative;
+                  opacity: .5;
+                  transition: all .5s;
+            &--active{
+                opacity: 1;
+            }
+            &:after{
+                  position: absolute;
+                  content: "";
+                  top: 39px;
+                  left: 17.5px;
+                  width: 5px;
+                  height: 33px;
+                  background-color: #3181ff;
+            }
+            &:nth-child(5)::after{
+                  height: 0;
+            }
+		}
+
+		&__header {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 30px;
+                  
+                 
+		}
+
+		&__number { 
+                  @include box(40px,40px);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-right: 10px;
+                  border-radius: 100%;
+                  border: 3px solid #0969ff;
+                  background-color: #3181ff;
+		}
+
+		&__title {
+		}
+
+		&__descr {
+                  display: none;
+                  margin-left: 70px;
+                  margin-bottom: 30px;
+		}
+}
+.accordion__item.accordion__item--active .accordion__number{
+    background-color: #ffffff;
+    color: $blue;
+}
+.accordion__item--active::after{
+      height: calc(100% - 8px);
+}
+@include media-query(1288){
+      .accordion {
+            &__item{
+                  &:nth-child(3)::after{
+                        height: 45px;
+                  }
+                  &:nth-child(4)::after{
+                        height: 55px;
+                  }
+            }
+      }
+      .accordion__item--active:nth-child(3)::after{
+            height: calc(100% - 8px);
+      }
+      .accordion__item--active:nth-child(4)::after{
+            height: calc(100% - 8px);
+      }
+}
+@include media-query(550){
+      .accordion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+                    &__item { 
+                        &:after{
+                          width: 0;
+                    }
+                    
+                    }
+        
+                    &__header {
+                          justify-content: center;
+                          flex-direction: column;  
+                    }
+        
+                    &__number { 
+                          
+                    }
+        
+                    &__title {
+                          text-align: center;
+                    }
+        
+                    &__descr {
+                        margin: 0;
+                    }
+        }
+}

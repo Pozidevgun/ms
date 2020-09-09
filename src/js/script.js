@@ -1,9 +1,9 @@
-	
 $(function(){
 	
     let header = $(".header"),
-	    introH = $(".header-component").innerHeight(),
-	    scrollOffset = $(window).scrollTop();
+	    introH = 900, // потому что из-за слика не получается правильно высчитать высоту
+		scrollOffset = $(window).scrollTop();
+
 /*fixed header*/
 	checkScroll(scrollOffset);
 
@@ -58,6 +58,37 @@ function playBtn(){
 			}
 		}
 
+		//slider-top
+			$('.slider__wrapper').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				prevArrow: '.prev',
+				nextArrow: '.next',
+				responsive: [
+					{
+					  breakpoint: 800,
+					  settings: {
+						dots: false
+					  }
+					},
+				  ]
+			});
+			//slider-customer
+			$('.slider-customer__wrapper').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				prevArrow: '.slider-customer__btn.prev',
+				nextArrow: '.slider-customer__btn.next',
+			});
 
+			//accordion
+
+			$('.accordion__header').on("click", function(){
+				$(this).closest('.accordion__item').siblings().removeClass('accordion__item--active').find('.accordion__descr').slideUp(400);
+				$(this).closest('.accordion__item').toggleClass('accordion__item--active').find('.accordion__descr').slideToggle(400);
+				return false;
+			});
 });
 

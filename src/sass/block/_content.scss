@@ -1,0 +1,71 @@
+.content{
+    padding: 50px 0;
+    &.content--bgiL{
+        background-image: url(../../img/mobile-solBg.png);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    &.content--bgiR{
+        background-image: url(../../img/bootBG.png);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    &.content--bgiLPurp{
+        background-image: url(../../img/msbg.png);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__device {
+        flex-basis: 60%;
+    }
+    &__img{
+        width: 100%;
+    }
+
+    &__info {
+        flex-basis: 37%;
+        order: 0;
+        margin: 50px;
+        
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__descr {
+        margin-bottom: 50px;
+    }
+
+}
+@include media-query(1000){
+    .content{
+        &__info{
+            margin: 0;
+        }
+    }
+}
+@include media-query(800){
+    .content{
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__devive{
+            flex-basis: 100%;
+        }
+        &__info{
+            flex-basis: 100%;
+            text-align: center;
+        }
+        &.content--bgiR .content__device{
+            order:-1;
+        }
+    }
+}

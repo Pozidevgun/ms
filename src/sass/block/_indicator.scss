@@ -1,0 +1,23 @@
+.indicator {
+    padding: 75px 0;
+    background: url(../../img/pinkBg.jpg);
+        &__wrapper{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+		&__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+		}
+
+		&__numb {
+            font-size: 54px;
+		}
+
+		&__descr {
+		}
+}

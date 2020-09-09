@@ -1,0 +1,44 @@
+.print{
+    background-color: $blue;
+    padding: 50px 0 0 0 ;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__info {
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        flex-basis: 50%;
+        & img{
+            width: 100%;
+        }
+    }
+    &__accordion{
+        max-width: 750px;
+    }
+}
+@include media-query(1000){
+    .print{
+        &__info {
+            margin: 0 auto;
+        }
+    
+        &__title {
+            text-align: center;
+        }
+        &__img {
+            display: none;
+        }
+        &__accordion{
+            width: 100%;
+            max-width: 1000px;
+        }
+    }
+}

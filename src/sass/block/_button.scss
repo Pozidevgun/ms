@@ -14,17 +14,41 @@
     }
 }
 .slider__btn{
-    padding: 10px;
+    padding: 20px 15px;
     background-color: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-.prev{
+.slider.slider--top .prev{
     border: 1px solid #fff;
+    background-image: url(../../img/leftArrow.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
     
 }
-.next{
+.slider.slider--top .next{
     border: 1px solid $blue;
+    background-image: url(../../img/rightArrowBlue.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.slider-customer .prev{
+    border: 1px solid $blue;
+    background-image: url(../../img/leftArrowBlue.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.slider-customer .next{
+    border: 1px solid $blue;
+    background-image: url(../../img/rightArrowBlue.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+@include media-query(1100){
+    .slider.slider--top .next{
+        border: 1px solid #fff;
+        background-image: url(../../img/rightArrowWhite.png);
+    }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <title>MS.</title>
 </head>
 <body>
@@ -86,36 +87,94 @@
                             </div>
                         </header>
                         <div class="header-component__slider">
-                            <div class="slider">
+                            <div class="slider slider--top">
                                 <div class="slider__wrapper">
-                                    <div class="slider__item">
-                                        <div class="slider__info">
-                                            <div class="slider__title">
-                                                <h2 class="title title--h2 title--white">We build Intelligent 
-                                                    Enterprise Software</h2>
+                                    <div class="slider__wrapper--item"><!--доп обертка для того что бы не слитал display flex уslider__item -->
+                                        <div class="slider__item">
+                                            <div class="slider__info">
+                                                <div class="slider__title">
+                                                    <h2 class="title title--h2 title--white">We build Intelligent 
+                                                        Enterprise Software</h2>
+                                                </div>
+                                                <div class="slider__text">
+                                                    <p class="text">We are a technology company that understands 
+                                                        complexity of businesses, and with our technical 
+                                                        expertise, we help them transform and scale</p>
+                                                </div>
+                                                <div class = "slider__item--button">
+                                                    <button class="button button--white">Read More</button>
+                                                </div>
                                             </div>
-                                            <div class="slider__text">
-                                                <p class="text">We are a technology company that understands 
-                                                    complexity of businesses, and with our technical 
-                                                    expertise, we help them transform and scale</p>
-                                            </div>
-                                            <div class = "slider__item--button">
-                                                <button class="button button--white">Read More</button>
+                                            <div class="slider__video">
+                                                    <div class="video">
+                                                        <video class = "videomain"  id = "videomain" src="img/videoplayback.mp4"  plays-inline type="video/mp4" ></video>
+                                                        <div class="play active" id="play1">
+                                                            <img src="img/play-button.png" alt="play-button" class="play__button">
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </div>
-                                        <div class="slider__video">
-                                                <div class="video">
-                                                    <video class = "videomain"  id = "videomain" src="img/videoplayback.mp4"  plays-inline type="video/mp4" ></video>
-                                                    <div class="play active" id="play1">
-                                                        <img src="img/play-button.png" alt="play-button" class="play__button">
-                                                    </div>
+                                    </div>
+                                    
+                                    <div class="slider__wrapper--item"><!--доп обертка для того что бы не слитал display flex уslider__item -->
+                                        <div class="slider__item">
+                                            <div class="slider__info">
+                                                <div class="slider__title">
+                                                    <h2 class="title title--h2 title--white">We build Intelligent 
+                                                        Enterprise Software</h2>
                                                 </div>
+                                                <div class="slider__text">
+                                                    <p class="text">We are a technology company that understands 
+                                                        complexity of businesses, and with our technical 
+                                                        expertise, we help them transform and scale</p>
+                                                </div>
+                                                <div class = "slider__item--button">
+                                                    <button class="button button--white">Read More</button>
+                                                </div>
+                                            </div>
+                                            <div class="slider__video">
+                                                    <div class="video">
+                                                        <video class = "videomain"  id = "videomain" src="img/videoplayback.mp4"  plays-inline type="video/mp4" ></video>
+                                                        <div class="play active" id="play1">
+                                                            <img src="img/play-button.png" alt="play-button" class="play__button">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__wrapper--item"><!--доп обертка для того что бы не слитал display flex уslider__item -->
+                                        <div class="slider__item">
+                                            <div class="slider__info">
+                                                <div class="slider__title">
+                                                    <h2 class="title title--h2 title--white">We build Intelligent 
+                                                        Enterprise Software</h2>
+                                                </div>
+                                                <div class="slider__text">
+                                                    <p class="text">We are a technology company that understands 
+                                                        complexity of businesses, and with our technical 
+                                                        expertise, we help them transform and scale</p>
+                                                </div>
+                                                <div class = "slider__item--button">
+                                                    <button class="button button--white">Read More</button>
+                                                </div>
+                                            </div>
+                                            <div class="slider__video">
+                                                    <div class="video">
+                                                        <video class = "videomain"  id = "videomain" src="img/videoplayback.mp4"  plays-inline type="video/mp4" ></video>
+                                                        <div class="play active" id="play1">
+                                                            <img src="img/play-button.png" alt="play-button" class="play__button">
+                                                        </div>
+                                                    </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="slider__button">
-                                    <button class="slider__btn prev"><img src="img/leftArrow.png" alt="leftArrow" class="prev__arrow"></button>
-                                    <button class="slider__btn next"><img src="img/rightArrowBlue.png" alt="rightArrow" class="prev__arrow"></button>
+                                    <div class="slider__button__wrapper">
+                                        <button class="slider__btn prev"></button>
+                                        <button class="slider__btn next"></button>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -123,10 +182,233 @@
             </div>
         
         </div>
+        <section class="partners">
+            <div class="container">
+                <div class="partners__wrapper">
+                    <div class="partners__item"></div>
+                    <div class="partners__item"></div>
+                    <div class="partners__item"></div>
+                    <div class="partners__item"></div>
+                    <div class="partners__item"></div>
+                    <div class="partners__item"></div>
+                </div>
+            </div>
+        </section>
+        <section class="content content--bgiL">
+            <div class="container">
+                <div class="content__wrapper">
+                    <div class="content__device">
+                        <img src="img/mobile-solution.png" alt="mobile" class="content__img">
+                    </div>
+                    <div class="content__info">
+                        <div class="content__title">
+                            <h2 class="title title--h2">Mobile App Development</h2>
+                        </div>
+                        <div class="content__descr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ea, deserunt doloremque consequatur sit neque eveniet, ullam in dignissimos quaerat amet, modi assumenda perferendis perspiciatis ad dolorem eius? Quidem mollitia assumenda tempora modi iste. Corrupti ipsum nostrum hic esse porro! Accusamus reprehenderit eos laudantium similique exercitationem consectetur iste odit earum.</p>
+                        </div>
+                        <div class="content__button"><button class="button">Read More</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content content--bgiLPurp">
+            <div class="container">
+                <div class="content__wrapper">
+                    <div class="content__device">
+                        <img src="img/Ms.png" alt="desktop" class="content__img">
+                    </div>
+                    <div class="content__info">
+                        <div class="content__title">
+                            <h2 class="title title--h2">Mobile App Development</h2>
+                        </div>
+                        <div class="content__descr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ea, deserunt doloremque consequatur sit neque eveniet, ullam in dignissimos quaerat amet, modi assumenda perferendis perspiciatis ad dolorem eius? Quidem mollitia assumenda tempora modi iste. Corrupti ipsum nostrum hic esse porro! Accusamus reprehenderit eos laudantium similique exercitationem consectetur iste odit earum.</p>
+                        </div>
+                        <div class="content__button"><button class="button">Read More</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content content--blue">
+            <div class="container">
+                <div class="content__wrapper">
+                   
+                    <div class="content__info">
+                        <div class="content__title">
+                            <h2 class="title title--h2">Mobile App Development</h2>
+                        </div>
+                        <div class="content__descr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ea, deserunt doloremque consequatur sit neque eveniet, ullam in dignissimos quaerat amet, modi assumenda perferendis perspiciatis ad dolorem eius? Quidem mollitia assumenda tempora modi iste. Corrupti ipsum nostrum hic esse porro! Accusamus reprehenderit eos laudantium similique exercitationem consectetur iste odit earum.</p>
+                        </div>
+                        <div class="content__button"><button class="button">Read More</button></div>
+                    </div>
+                     <div class="content__device">
+                        <img src="img/Ms.png" alt="desktop" class="content__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="print">
+            <div class="container">
+                <div class="print__wrapper">
+                    <div class="print__info">
+                        <div class="print__title">
+                            <h2 class="title title--white">Web Development Services</h2>
+                        </div>
+                        <div class="print__accordion">
+                            <ul class="accordion">
+                                <li class="accordion__item">
+                                    <div class="accordion__header">
+                                        <div class="accordion__number"><span>1</span></div>
+                                        <div class="accordion__title">
+                                            <h3 class="title title--h4 title--white">
+                                                Javascript Development
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__descr">Complain Management System is a platform which is double implied between customer and seller. 
+                                        It helps the seller to keep track of all the complaints lodged by the customer in respect of the product.</div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__header">
+                                        <div class="accordion__number">2</div>
+                                        <div class="accordion__title"><h3 class="title title--h4 title--white">
+                                            How can I uninstall Dummy Content?
+                                        </h3></div>
+                                    </div>
+                                    <div class="accordion__descr">Complain Management System is a platform which is double implied between customer and seller. 
+                                        It helps the seller to keep track of all the complaints lodged by the customer in respect of the product.</div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__header">
+                                        <div class="accordion__number">3</div>
+                                        <div class="accordion__title"><h3 class="title title--h4 title--white">
+                                            Where can I download earlier versions?
+                                        </h3></div>
+                                    </div>
+                                    <div class="accordion__descr">Complain Management System is a platform which is double implied between customer and seller. 
+                                        It helps the seller to keep track of all the complaints lodged by the customer in respect of the product.</div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__header">
+                                        <div class="accordion__number">4</div>
+                                        <div class="accordion__title"><h3 class="title title--h4 title--white">
+                                            Under what license are Regular Labs extensions released?
+                                        </h3></div>
+                                    </div>
+                                    <div class="accordion__descr">Complain Management System is a platform which is double implied between customer and seller. 
+                                        It helps the seller to keep track of all the complaints lodged by the customer in respect of the product.</div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__header">
+                                        <div class="accordion__number">5</div>
+                                        <div class="accordion__title"><h3 class="title title--h4 title--white">
+                                            Do I still need the NoNumber Framework plugin?
+                                        </h3>
+                                    </div>
+                                    </div>
+                                    <div class="accordion__descr">Complain Management System is a platform which is double implied between customer and seller. 
+                                        It helps the seller to keep track of all the complaints lodged by the customer in respect of the product.</div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="print__img">
+                        <img src="img/image.png" alt="picture" >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="customer">
+            <div class="container">
+                <div class="customer__title">
+                    <div class="title">Words from our customer</div>
+                </div>
+                <div class="customer__slider">
+                    <div class="slider-customer">
+                            <div class="slider-customer__wrapper">
+                               
+                                    <div class="slider-customer__item">
+                                        <div class="slider-customer__quote"><span><img src="img/com.png" alt="com"></span>This is unbelievable. After using Testiminial 
+                                            Generator my buisness skyrocketed!
+                                        </div>
+                                        <div class="slider-customer__card">
+                                            <div class="slider-customer__img"><img src="img/photoaut.png" alt="Joe"></div>
+                                            <div class="slider-customer__info">
+                                                <div class="slider-customer__name">John Doe</div>
+                                                <div class="slider-customer__post">Ceo at Apple Inc</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-customer__item">
+                                        <div class="slider-customer__quote"><span><img src="img/com.png" alt="com"></span>This is unbelievable. After using Testiminial 
+                                            Generator my buisness skyrocketed!
+                                        </div>
+                                        <div class="slider-customer__card">
+                                            <div class="slider-customer__img"><img src="img/photoaut.png" alt="Joe"></div>
+                                            <div class="slider-customer__info">
+                                                <div class="slider-customer__name">John Doe</div>
+                                                <div class="slider-customer__post">Ceo at Apple Inc</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-customer__item">
+                                        <div class="slider-customer__quote"><span><img src="img/com.png" alt="com"></span>This is unbelievable. After using Testiminial 
+                                            Generator my buisness skyrocketed!
+                                        </div>
+                                        <div class="slider-customer__card">
+                                            <div class="slider-customer__img"><img src="img/photoaut.png" alt="Joe"></div>
+                                            <div class="slider-customer__info">
+                                                <div class="slider-customer__name">John Doe</div>
+                                                <div class="slider-customer__post">Ceo at Apple Inc</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                            </div>
+                            <div class="slider-customer__button">
+                                <button class="slider-customer__btn prev"></button>
+                                <button class="slider-customer__btn next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="indicator">
+            <div class="container">
+                <div class="indicator__wrapper">
+                    <div class="indicator__item">
+                        <div class="indicator__numb">72+</div>
+                        <div class="indicator__descr">Happy Clients</div>
+                    </div>
+                    <div class="indicator__item">
+                        <div class="indicator__numb">512+</div>
+                        <div class="indicator__descr">Project Lunched</div>
+                    </div>
+                    <div class="indicator__item">
+                        <div class="indicator__numb">102+</div>
+                        <div class="indicator__descr">Startup</div>
+                    </div>
+                    <div class="indicator__item">
+                        <div class="indicator__numb">32+</div>
+                        <div class="indicator__descr">Team Member</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container"></div>
+        </section>
     </div>
-    
+ 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.3.1.min.js" integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

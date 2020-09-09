@@ -3,7 +3,7 @@
         display: none;
         position: fixed;
         margin: 0 auto;
-        max-width: 1350px;
+        width: 100%;
         top: 0;
         left: 0;
         right: 0;
@@ -30,6 +30,7 @@
         text-decoration: none;
         color: #ffffff;
         cursor: pointer; 
+        font-size: 21px;
     }
     &__icon{
         @include box(50px, 50px);
