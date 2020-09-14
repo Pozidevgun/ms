@@ -1,0 +1,18 @@
+.footer-components {
+    background-color: #ebf3ff;
+    padding: 90px 0px 20px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #cfcfcf;
+        padding-bottom: 50px;
+    }
+}
+
+.footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+}

@@ -24,19 +24,25 @@
     &__social{
         flex-basis: 40%;
     }
-    
     &.header--fixed{
         position: fixed;
         margin: 0 auto;
-        width: 100%;
-        height: 100px;
+        height: 60px;
+        max-width: 100%;
         margin: 0 auto;
         top: 0;
         right: 0;
         left: 0;
         background-color: $blue;
         z-index: 2000;
+        justify-content: center;
     }
+}
+.header.header--fixed .header__wrapper.header__wrapper--left{
+    max-width: 905px;
+}
+.header.header--fixed .header__wrapper.header__wrapper--right{
+    max-width: 440px;
 }
 @include media-query(1000){
     .header{
@@ -55,7 +61,7 @@
     }
     
 }
-@include media-query(400){
+@include media-query(550){
     .header{
         &__discuss{
             display: none;

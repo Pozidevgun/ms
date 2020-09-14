@@ -1,0 +1,113 @@
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0, .1);
+    &__top {
+        position: relative;
+    }
+    &__img{
+        & img{
+            width: 100%;
+        }
+    }
+    &__hover {
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(90deg, rgba(152,58,240,.7) 0%, rgba(244,81,108,.7) 100%);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include box(100%,100%);
+        opacity: 0;
+        transition:  1s opacity;
+        &--active{
+            opacity:  1;
+
+        }
+        
+    }
+    &__date {
+        position: absolute;
+        top: 5%;
+        left: 9%;
+        transform: translate(-50%,0);
+        background-color: $blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        color: #ffffff;
+        font-weight: 400;
+    }
+    &__number {
+        padding: 10px 12px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            width:50px;
+            height:1px;
+            display: block;
+            background-color: #ffffff;
+            color: #ffffff;
+            z-index: 1;
+        }
+    }
+    &__month {
+        padding: 10px 12px;
+    }
+    &__share {
+        &-btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #000000;
+            text-decoration: none;
+            background-color: #ffffff;
+            padding: 10px 40px;
+            border-radius: 20px;
+        }
+    }
+    &__viewing {
+        position: absolute;
+        bottom: 5%;
+        left: 12%;
+        transform: translate(-50%,0);
+        background-color: rgba(255,255,255,.3);
+        padding: 3px 20px;
+        border-radius: 20px;
+        color: #ffffff;
+        & span{
+            margin-right: 10px;
+        }
+    }
+    &__bot {
+        padding: 20px;
+    }
+
+    &__het {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        color: $blue;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+    &--hor{
+        margin-bottom: 20px;
+    }
+}

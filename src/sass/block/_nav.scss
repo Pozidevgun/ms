@@ -23,6 +23,32 @@
         color: #ffffff; 
         text-decoration: none;
         cursor: pointer;
+        &--black{
+            color: #000000;
+        }
+    }
+    &__item--black{
+        width: 100%;
+        margin-right: 30px;
+        &:nth-child(5){
+            margin-right: 0;
+        }
+        &:hover:before{
+            width: 0;
+        }
+        & .nav__link{
+            color: #000000;
+        }
     }
 
+}
+@include media-query (500){
+    .footer__nav .nav__list {
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 30px;
+    }
+    .nav__item--black{
+        margin-right: 0px;
+    }
 }

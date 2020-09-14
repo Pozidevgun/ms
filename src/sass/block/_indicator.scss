@@ -16,8 +16,22 @@
 
 		&__numb {
             font-size: 54px;
-		}
+        }
+}
+@include media-query(550){
+    .indicator {
+            &__wrapper{
+                align-items: flex-start;
+            }
+            &__item {
 
-		&__descr {
-		}
+            }
+    
+            &__numb {
+                font-size: 34px;
+            }
+            &__descr{
+                text-align: center;
+            }
+    }
 }

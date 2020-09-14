@@ -19,13 +19,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &--end{
+            justify-content: flex-end;
+        }
     }
 
     &__device {
         flex-basis: 60%;
+        &--small{
+            flex-basis: 40%;
+        }
     }
     &__img{
         width: 100%;
+        &--small{
+            max-width: 400px;
+        }
+        
     }
 
     &__info {
@@ -65,6 +75,9 @@
             text-align: center;
         }
         &.content--bgiR .content__device{
+            order:-1;
+        }
+        &.content--bgiLPurp .content__device{
             order:-1;
         }
     }

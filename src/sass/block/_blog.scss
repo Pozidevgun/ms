@@ -1,0 +1,49 @@
+.blog {
+    padding: 100px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__content {
+    }
+
+    &__content--left {
+        flex-basis: 40%;
+    }
+
+    &__info {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+    }
+
+    &__item {
+    }
+
+    &__content--right {
+        flex-basis: 55%;
+       
+    }
+   
+}
+@include media-query(800){
+    .blog {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__content--left {
+            flex-basis: 100%;
+        }
+        &__content--right {
+            flex-basis: 100%;
+           
+        }
+    }
+}

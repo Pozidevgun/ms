@@ -26,9 +26,6 @@
 }
 @include media-query(1000){
     .print{
-        &__info {
-            margin: 0 auto;
-        }
     
         &__title {
             text-align: center;

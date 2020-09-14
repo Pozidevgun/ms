@@ -65,3 +65,8 @@
 .nav-burger.nav-burger--open .nav-burger__list{
         display: block;
 }
+.header.header--fixed{
+    .nav-burger__list{
+        margin-top: 60px;
+    }
+}
