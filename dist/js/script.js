@@ -1,8 +1,8 @@
 $(function(){
     let header = $(".header"),
-	    introH = 900, // потому что из-за слика не получается правильно высчитать высоту
+	    introH = 900, //  из-за  слика не получается правильно высчитать высоту
 		scrollOffset = $(window).scrollTop();
-
+console.log(introH)
 /*fixed header*/
 	checkScroll(scrollOffset);
 
